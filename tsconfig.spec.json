@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["jest", "node"],
+    "allowJs": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": false,
+    "isolatedModules": false
+  },
+  "files": ["test.ts", "polyfills.ts"],
+  "include": ["libs/**/*.spec.ts", "apps/**/*.spec.ts"],
+}

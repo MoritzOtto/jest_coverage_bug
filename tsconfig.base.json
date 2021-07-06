@@ -1,0 +1,36 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "downlevelIteration": true,
+    "rootDir": ".",
+    "baseUrl": ".",
+    "sourceMap": true,
+    "allowJs": false,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@sda-app/*": ["libs/*/src/index.ts"],
+      "@sda-app/web-components": ["web-components/src/index.ts"]
+    }
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictMetadataEmit": true
+  },
+  "exclude": [
+    "node_modules",
+    "tmp",
+    "test-setup.ts",
+    "test.ts"
+  ]
+}
